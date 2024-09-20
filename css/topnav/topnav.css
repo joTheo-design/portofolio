@@ -1,19 +1,19 @@
 /* flex */
 #topnav {
+    display: inline-block;
     width: 100%;
     height: 80px;
     background-color: rgb(31, 29, 86);
-    padding: 5px 60px 5px 60px;
-    text-align: center; 
-    position: relative;
+    padding: 10px 60px 10px 60px;
+    text-align: center;     
     max-height: fit-content;
 
     overflow: hidden;
+    position: relative;
 }
 
 #topnav .elements {
-    display: inline-block;
-    height: 90%;
+    height: 100%;
     width: 50px;
     display: inherit;
 }
@@ -28,6 +28,11 @@
 
 /* div */
 #topnav #right {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+    height: 90%;
     padding: 10px;
     float: right;
     width: auto;
@@ -36,22 +41,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #00FFB0;
+    border-radius: 10px;
 }
 
 #topnav #center {
-    width: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-#topnav .elements span {
+#topnav #center span {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+
+    color: white;
+
+    align-self: center;
+    width: auto;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#topnav #right span {
     /* font */
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-size: 18px;
+    color: #0B1356;
+    
     /* display */
-    margin: 25px;
+    margin: 20px;
+    
 }
+
+
 
 .debug {
     background-color: rgb(13, 255, 0);
