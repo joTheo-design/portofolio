@@ -2,7 +2,7 @@
 #topnav {
     display: inline-block;
     width: 100%;
-    height: 80px;
+    height: 64px;
     background-color: rgb(31, 29, 86);
     padding: 10px 60px 10px 60px;
     text-align: center;     
@@ -24,6 +24,15 @@
     float: left;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#topnav #left-elm {
+    height: 26px;
+    width: 241.5px;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
 }
 
 /* div */
@@ -48,13 +57,12 @@
 }
 
 #topnav #center {
-    width: auto;
+    position: relative;
+    transform: translate(0,-100%);
+    width: inherit;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    
-    margin-top: auto;
-    margin-bottom: auto;
+    align-items: center;
 }
 
 #topnav #center span {
@@ -69,8 +77,8 @@
     align-self: center;
     width: auto;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    
+    margin: auto auto;
 }
 
 #topnav #right span {
