@@ -1,15 +1,19 @@
+
+
 /* flex */
 #topnav {
     display: inline-block;
     width: 100%;
-    height: 64px;
-    background-color: rgb(31, 29, 86);
+    height: 72px;
     padding: 10px 60px 10px 60px;
     text-align: center;     
     max-height: fit-content;
 
     overflow: hidden;
     position: relative;
+
+    background: rgb(11,19,86);
+    background: linear-gradient(90deg, rgba(11,19,86,1) 30%, rgba(24,42,188,1) 100%); 
 }
 
 #topnav .elements {
@@ -19,17 +23,21 @@
 }
 
 #topnav #left {
-    height: 100%;
-    width: 139.24px;
+    height: 27px;
+    width: auto;
     float: left;
-    margin-top: auto;
-    margin-bottom: auto;
+    
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
 }
 
 #topnav #left-elm {
-    height: 26px;
-    width: 241.5px;
+    height: 24px;
+    width: auto;
     float: left;
+    margin-left: 24px;
+    /* center */
     position: relative;
     top: 50%;
     transform: translate(0, -50%)
@@ -50,19 +58,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: #00FFB0;
-    border-radius: 10px;
-
-}
-
-#topnav #center {
-    position: relative;
-    transform: translate(0,-100%);
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #topnav #center span {
@@ -70,29 +65,27 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 18px;
-
+    font-size: var(--topnavfontsize);
+    
     color: white;
 
     align-self: center;
     width: auto;
     text-align: center;
     
-    margin: auto auto;
 }
 
 #topnav #right span {
-    /* font */
-    font-family: "Sora", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
-    color: #0B1356;
+    font-size: var(--topnavfontsize);
+    color: #00FFB0;
     
     /* display */
-    margin: 20px;
-    
+    margin-left: 45px;
+}
+
+#topnav #right #star {
+    width: 16px;
+    margin-left: 16px;
 }
 
 

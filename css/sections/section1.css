@@ -1,0 +1,125 @@
+#section-1 {
+    background: rgb(9,65,88);
+    background: linear-gradient(139.41deg, #00FFD1 32.07%, #094158 100%);
+    height: 900px;
+    overflow: hidden;
+    position: relative
+}
+
+#section-1 #ball1 {
+    /* ball-01 1 */
+
+    position: absolute;
+    width: 648px;
+    height: 648px;
+    left: -101px;
+    top: 100px;
+
+    background: url(ball-01.png);
+    filter: drop-shadow(-8px 10px 95.2px rgba(0, 55, 255, 0.36));
+
+}
+
+#section-1 #ball2 {
+    width: 536px;
+    height: 536px;
+
+    /* ball-01 2 */
+
+    position: absolute;
+    width: 536px;
+    height: 536px;
+    left: -206px;
+    top: 266px;
+
+    filter: drop-shadow(-8px 10px 95.2px rgba(0, 55, 255, 0.36));
+}
+
+#section-1 #ball3 {
+    /* ball-01 2 */
+
+    position: absolute;
+    width: 242px;
+    height: 242px;
+    left: 249px;
+    top: 536px;
+
+    background: url(ball-01.png);
+    filter: drop-shadow(-8px 10px 95.2px rgba(0, 55, 255, 0.36));
+}
+
+#section-1 #ball4 {
+    /* ball-01 3 */
+
+    position: absolute;
+    width: 538.2px;
+    height: 538.2px;
+    right: -91.2px;
+    top: 586.32px;
+
+    background: url(ball-01.png);
+    filter: drop-shadow(-8px 10px 95.2px rgba(0, 55, 255, 0.1));
+    transform: rotate(-43.62deg);
+}
+
+#section-1 #ball5 {
+    /* ball-01 4 */
+
+    position: absolute;
+    width: 220.27px;
+    height: 220.27px;
+    right: 267.73px;
+    top: 778.97px;
+
+    background: url(ball-01.png);
+    filter: drop-shadow(-8px 10px 95.2px rgba(0, 55, 255, 0.1));
+    transform: rotate(-43.62deg);
+
+}
+
+#section-1 #name {
+    /* Jonathan Theodore */
+
+    position: absolute;
+    width: 644px;
+    height: 81px;
+    left: 639px;
+    top: 413px;
+
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 81px;
+    /* identical to box height */
+
+    color: var(--blue);
+}
+
+#section-1 #greet {
+    /* Hi! my name is */
+
+    position: absolute;
+    width: 294px;
+    height: 50px;
+    left: 639px;
+    top: 363px;
+
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: var(--darkblue);
+}
+
+#section-1 #shooting-star-1{
+    /* Group 2 */
+
+    position: absolute;
+    width: 319.5px;
+    height: 26px;
+    left: 953px;
+    top: 375px;
+}
