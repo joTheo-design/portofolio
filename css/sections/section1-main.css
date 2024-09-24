@@ -3,7 +3,11 @@
     background: linear-gradient(139.41deg, #00FFD1 32.07%, #094158 100%);
     height: 900px;
     overflow: hidden;
-    position: relative
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
 }
 
 #section-1 #ball1 {
@@ -77,49 +81,55 @@
 
 }
 
-#section-1 #name {
-    /* Jonathan Theodore */
+@media screen and (min-width: 1512px) and (max-width:1920px) {
+    #section-1 #textbox {
+        width: auto;
+        height: 131px;
+        
+        display: grid;
 
-    position: absolute;
-    width: 644px;
-    height: 81px;
-    left: 639px;
-    top: 413px;
+        grid-template-areas: 
+        'greet greet star'
+        'name name name'
+        ;
+        align-self: center;
+        vertical-align: middle;
 
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 81px;
-    /* identical to box height */
+        position: absolute;
+        left: 639px;
+    }
 
-    color: var(--blue);
-}
-
-#section-1 #greet {
-    /* Hi! my name is */
-
-    position: absolute;
-    width: 294px;
-    height: 50px;
-    left: 639px;
-    top: 363px;
-
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 50px;
-
-    color: var(--darkblue);
-}
-
-#section-1 #shooting-star-1{
-    /* Group 2 */
-
-    position: absolute;
-    width: 319.5px;
-    height: 26px;
-    left: 953px;
-    top: 375px;
+    #section-1 #name {
+        /* Jonathan Theodore */
+        grid-area: name;
+    
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 81px;
+        /* identical to box height */
+    
+        color: var(--blue);
+    }
+    
+    #section-1 #greet {
+        /* Hi! my name is */
+        grid-area: greet;
+    
+        font-family: 'Sora'; 
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+    
+        color: var(--darkblue);
+    }
+    
+    #section-1 #shooting-star-1{
+        /* shooting star */
+        grid-area: star;
+        justify-self: center;
+        align-self: center;
+    }
 }
