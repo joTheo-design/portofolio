@@ -1,12 +1,20 @@
-.cascadia-mono{
-    font-family: 'Cascadia mono';
-    font-optical-sizing: auto;
-    font-style: normal;
-}
+
 
 @font-face {
-    font-family: Cascadia Mono;
-    src: "assets/font/CascadiaMono/CascadiaMono.woff2";
+    font-family: type2;
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("../../assets/font/CascadiaMono/CascadiaMono.woff2") format('woff'),
+         url("../../assets/font/CascadiaMono/CascadiaMono.ttf") format('truetype'),
+         local('Cascadia Mono');
+
+}
+
+.cascadia-mono{
+    font-family: 'type2';
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .extralight{
