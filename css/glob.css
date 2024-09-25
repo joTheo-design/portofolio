@@ -31,3 +31,8 @@ body {
     --darkblue: #0B1356;
     --white: #FFFFFF;
 }
+
+.debug {
+    background-color: rgb(13, 255, 0);
+    border: 2px solid brown;
+}
